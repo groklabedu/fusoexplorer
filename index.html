@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/Favicon1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuso Explorer | Grok Lab</title>
+    
+    <!-- 1. IMPORTAÇÃO DO TAILWIND (Isso resolve a aparência) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. CONFIGURAÇÃO DE FONTES E CORES BASE -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617; /* Slate 950 */
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      /* Customização da barra de rolagem para ficar elegante */
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #0f172a; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- O Vite usa este script para carregar o seu App.jsx -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
